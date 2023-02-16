@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icon stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet"> <!-- font stylesheet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style media="screen">
+
+  body {
+    margin: 0;
+    font-family: 'Rowdies';
+  }
+
+  @font-face {
+    font-family: myFirstFont;
+    src: url("/Project/ADMIN/ChinalBoldPersonalUseOnly-WRo4.ttf");
+  }
+
+/* Brand Name */
+  .top-container {
+
+  	  text-align: center;
+  	  background: white;
+  	  color: black;
+  	  font-size: 50px;
+  	  font-weight:bold;
+  	  font-family: myFirstFont;
+  }
+/* end of Brand Name */
+
+/* Navigation Bar*/
+
+  .header {
+    height:50px;
+    background: #E11584;
+    color: #f1f1f1;
+    width:100%;
+  }
+
+  .header a{
+
+  	float : left;
+  	display:block;
+  	color : white;
+  	text-align:center;
+  	font-size:15px;
+  	padding: 14px 16px;
+  	text-decoration:none;
+
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #E11584;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right:0;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* end of Navigation Bar*/
+
+/* main body */
+
+  .main {
+    padding: 20px;
+  }
+
+  .page-wrapper {
+  padding-left:450px;
+  }
+
+  h1,h3 {
+  text-align: center;
+  }
+
+
+  input {
+  line-height: 3em;
+  }
+
+  .resetbtn  {
+   width: 150px;
+   height: 50px;
+   background-color: white;
+   color: black;
+   float: left;
+     font-family: 'Rowdies';
+  }
+
+  .submitbtn{
+    width:    150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    float: left;
+    margin-left: 70px;
+
+  font-family: 'Rowdies'; }
+  .submitbtn:hover {cursor: pointer;background-color: white;color: black; font-weight: bolder;}
+
+
+  .resetbtn:hover { cursor: pointer;background-color: black ;color: white; font-weight: bolder;}
+
+/* end of main body */
+
+/* sticky navigation bar */
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+/* end of sticky navigation bar */
+
+/* footer */
+
+  .footer{
+
+    height:200px;
+    background: #E11584;
+    color: #f1f1f1;
+    bottom:0px;
+
+  }
+
+  .footer .footercontent {
+
+  	border :1px solid red;
+  	height : 200px;
+  	display : flex;
+
+  }
+
+
+  .footer .footercontent .footer-column {
+
+  	flex:1;
+  	padding:50px;
+  	font-size : 15px;
+
+  }
+
+  .footer .footercontent .footer-column a{
+
+  	color : white;
+  	text-decoration : none;
+  }
+
+/* end of footer */
+
+</style>
+
+  </head>
+  <body>
+
+<!-- Brand Name -->
+    <div class="top-container">
+      <p>SweetLovely Shawl</p>
+    </div>
+<!-- end of Brand Name -->
+
+<!-- Navigation Bar -->
+    <div class="header" id="myHeader">
+      	<a style="float:left; font-size:20px;"" class="fa fa-home" href="index.html"></a>
+    	<div class="dropdown" style="float:left;">
+  			<button class="dropbtn">All Collection
+  			  <i class="fa fa-caret-down"></i>
+  			</button>
+  			<div class="dropdown-content" style="left:0;">
+			  <a href="product.html">COLLECTION</a>
+        <a href="sls_shawl.html">SLS SHAWL</a>
+        <a href="sls_print.html">SLS PRINT</a>
+        <a href="sls_instant.html">SLS INSTANT</a>
+        <a href="sls_square.html">SLS SQUARE</a>
+			</div>
+		</div>
+    		<a href="featured.html">Featured</a>
+    		<a href="aboutus.html">About Us</a>
+    		<div style="float:right" class="dropdown">
+    			<button class="dropbtn">
+    			<i class="fa fa-user"></i>
+    			</button>
+    		<div class="dropdown-content" >
+  			  <a href="profile.html">Profile</a>
+			  <a href="orderhistory.html">Order History</a>
+        <a href="loginpage.html">Logout</a>
+  			</div>
+    		</div>
+    		<a style="float:right" class="fa fa-shopping-cart" href="cart.html"></a>
+    		<a style="float:right" class="fa fa-search" href="#"></a>
+    </div>
+<!-- end of Navigation Bar -->
+
+<!-- Main body -->
+    <h1>MY ACCOUNT</h1>
+
+    <h3 style="margin-top:50px;" >ACCOUNT DETAILS</h3>
+
+
+    <hr>
+<div class="page-wrapper">
+
+
+
+
+<form action="index.html" method="get">
+
+  <p>
+
+  <label> First Name </label><br><br>
+  <input type="text" name="firstname" size="50px"   >
+
+</p>
+
+<p>
+
+<label> Last Name </label><br><br>
+<input type="text" name="lastname" size="50px"  height="48">
+
+</p>
+
+<p>
+
+<label> Email Address </label><br><br>
+<input type="email" name="emailadd" size="50px"   height="48">
+
+</p>
+
+<p>
+
+<label> Password </label><br><br>
+<input type="password" name="pass" size="50px"  height="48">
+
+</p>
+
+<input class="resetbtn" type="reset" name="btnreset" value="Reset">
+
+</form>
+
+<button class="submitbtn"type="submit" id="btnsubmit" onclick="message()" > Update Account</button>
+<br><br>
+<br><br>
+</div>
+
+<!-- end of Main body -->
+
+<!-- pop up message when submit button is clicked -->
+<script type="text/javascript">
+  function message() {
+      alert("Your account is succesfully updated !")
+      location.replace("index.html")
+  }
+</script>
+<!-- end of pop up message when submit button is clicked -->
+
+<!-- footer -->
+<div class="footer">
+
+  <div class="footercontent">
+    <div class="footer-column info">
+
+      <p>INFORMATION</p>
+			<a href="feedback.html">Feedback</a><br>
+				<a href="contactus.html">Contact Us</a><br>
+				<a href="policy.html">Privacy Policy</a><br>
+				<a href="howtoorder.html">How To Order</a><br>
+
+    </div>
+    <div class="footer-column contact">
+
+      <p>CUSTOMER SERVICE</p>
+        <a href="https://instagram.com/schals_knitted_house?igshid=13zznc3zdvoma" target="_blank" class="fa fa-instagram" style="font-size:30px;"></a> &nbsp &nbsp &nbsp
+		<a href="https://www.facebook.com/sweetlovelyshawl" target="_blank" class="fa fa-facebook" style="font-size:30px;"></a> &nbsp &nbsp &nbsp
+		<a href="http://www.wasap.my/60192213441/" target="_blank" class="fa fa-whatsapp" style="font-size:30px;"></a>
+
+    </div>
+    <div class="footer-column blank"></div>
+  </div>
+
+
+</div>
+<!-- end of footer -->
+
+<!-- sticky header script -->
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+</script>
+<!-- end of sticky header script -->
+
+  </body>
+</html>

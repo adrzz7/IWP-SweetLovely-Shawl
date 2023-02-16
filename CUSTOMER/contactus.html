@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<head>
+<title>Contact Us</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- icon stylesheet -->
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet"> <!-- font stylesheet -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Rowdies';
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(ChinalBoldPersonalUseOnly-WRo4.ttf);
+}
+
+/* Brand Name */
+.top-container {
+	text-align: center;
+	background: white;
+	color: black;
+	font-size: 50px;
+	font-weight:bold;
+	font-family: myFirstFont;
+}
+/* end of Brand Name */
+
+/* Navigation Bar*/
+.header {
+  height:50px;
+  background: #E11584;
+  color: #f1f1f1;
+  width:100%;
+}
+
+.header a{
+	float : left;
+	display:block;
+	color : white;
+	text-align:center;
+	font-size:15px;
+	padding: 14px 16px;
+	text-decoration:none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #E11584;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right:0;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* end of Navigation Bar*/
+
+/* main body */
+.main {
+  padding: 20px;
+}
+
+.ContactBody{
+	margin-bottom:20%;
+}
+.Contactcolumn1 {
+	float: left;
+	width: 43%;
+}
+.Contactcolumn2 {
+	float: right;
+	width: 50%;
+}
+.Contactrow:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media screen and (max-width: 830px) {
+  .Contactcolumn1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 830px) {
+  .Contactcolumn2 {
+    width: 100%;
+  }
+}
+
+.ContactRMargin{
+	margin-left:22%;
+}
+
+.ContactHead{
+	margin-top:7%;
+	margin-bottom:8%;
+	text-align: center;
+	font-size:130%;
+}
+.SLS{
+	font-size:180%;
+	margin-bottom:23%;
+}
+
+.ContactDot{
+	font-size:160%;
+}
+
+.ContactInfo{
+	font-size:130%;
+	letter-spacing:1px;
+}
+.ContactSent{
+	margin-top:5%;
+	font-size:140%;
+	margin-bottom:15%;
+	margin-right:15%;
+
+}
+.ContactCustDot{
+	font-size:130%;
+	letter-spacing:1px;
+}
+
+.ContactNormTextBox{
+	height:40px;
+	font-size:140%;
+}
+
+.ContactMsg{
+	font-size:140%;
+}
+
+#ContactSbmtButn {
+	margin-top:5%;
+	background-color:#000000;
+	color:white;
+	padding: 16px 32px;
+	letter-spacing:1px;
+	font-size:120%;
+	cursor: pointer;
+
+}
+
+#ContactSbmtButn:hover {
+	background-color:white;
+	color:black;
+
+}
+/* end of main body */
+
+/* sticky navigation bar */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* end of sticky navigation bar */
+
+/* footer */
+.footer{
+  height:200px;
+  background: #E11584;
+  color: #f1f1f1;
+  bottom:0px;
+}
+
+.footer .footercontent {
+	border :1px solid red;
+	height : 200px;
+	display : flex;
+}
+
+
+.footer .footercontent .footer-column {
+	flex:1;
+	padding:50px;
+	font-size : 15px;
+}
+
+.footer .footercontent .footer-column a{
+	color : white;
+	text-decoration : none;
+}
+/* end of footer */
+
+
+</style>
+
+
+<body>
+
+<!-- Brand Name -->
+<div class="top-container">
+  <p>SweetLovely Shawl</p>
+</div>
+<!-- end of Brand Name -->
+
+<!-- Navigation Bar -->
+<div class="header" id="myHeader">
+  		<a style="float:left; font-size:20px;" class="fa fa-home" href="index.html"></a>
+		<div class="dropdown" style="float:left;">
+			<button class="dropbtn">All Collection
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" style="left:0;">
+			  <a href="product.html">COLLECTION</a>
+        <a href="sls_shawl.html">SLS SHAWL</a>
+        <a href="sls_print.html">SLS PRINT</a>
+        <a href="sls_instant.html">SLS INSTANT</a>
+        <a href="sls_square.html">SLS SQUARE</a>
+			</div>
+		</div>
+		<a href="featured.html">Featured</a>
+		<a href="aboutus.html">About Us</a>
+		<div style="float:right" class="dropdown">
+			<button class="dropbtn">
+			<i class="fa fa-user"></i>
+			</button>
+			<div class="dropdown-content" >
+  			  <a href="profile.html">Profile</a>
+			  <a href="orderhistory.html">Order History</a>
+        <a href="loginpage.html">Logout</a>
+  			</div>
+		</div>
+		<a style="float:right" class="fa fa-shopping-cart" href="cart.html"></a>
+		<a style="float:right" class="fa fa-search" href="#"></a>
+</div>
+<!-- end of Navigation Bar -->
+
+<!-- Main body -->
+<div class="ContactBody">
+	<div class="ContactHead"><h1>CONTACT US</h1></div>
+	<div class="Contactrow">
+	  <div class="Contactcolumn1">
+			<div class="ContactRMargin">
+			<h3 class="SLS">SWEET LOVELY SHAWL SDN BHD</h3>
+			<p class="ContactDot">For enquiry : </p>
+			<p class="ContactInfo">inquiry@sweetlovelyshawl.com</p>
+			<p class="ContactDot"><br><br>For WhatsApp Order:</p>
+			<p class="ContactInfo">+601234567899</p>
+			<p class="ContactDot">For dropship/agent/Wholesale:</p>
+			<p class="ContactInfo">+601222267899</p>
+			<p class="ContactDot"><br><br>HQ Shop Address: </p>
+			<p class="ContactInfo">30, Jalan Plumbum P7/P Seksyen 78<br><br>Shah Alam, Selangor, Malaysia</p>
+			</div>
+		</div>
+
+		<div class="Contactcolumn2">
+			<p class="ContactSent">Thank you for your interest in Sweet Lovely Shawl. Please fill in the field below and we will respond as soon as possible.</p>
+			<div class="ContactLMargin">
+			<p class="ContactCustDot">NAME</p>
+			<input type="text" size="50" maxlength="70" class="ContactNormTextBox"/>
+			<p class="ContactCustDot">EMAIL</p>
+			<input type="text" size="50" maxlength="30" class="ContactNormTextBox"/>
+			<p class="ContactCustDot">PHONE NUMBER</p>
+			<input type="text" size="50" maxlength="30" class="ContactNormTextBox"/>
+			<p class="ContactCustDot">YOUR MESSAGE</p>
+			<textarea rows = "8" cols = "58" name = "ContactMsg" class="ContactMsg">
+			</textarea>
+			</div>
+			<p><input type="submit" value="SUBMIT ENQUIRY"  id="ContactSbmtButn" onclick="message()"/>
+		</div>
+	</div>
+</div>
+<!-- end of Main body -->
+
+<!-- footer -->
+<div class="footer">
+
+	<div class="footercontent">
+		<div class="footer-column info">
+
+			<p>INFORMATION</p>
+				<a href="feedback.html">Feedback</a><br>
+				<a href="contactus.html">Contact Us</a><br>
+				<a href="policy.html">Privacy Policy</a><br>
+				<a href="howtoorder.html">How To Order</a><br>
+
+		</div>
+		<div class="footer-column contact">
+
+			<p>CUSTOMER SERVICE</p>
+			<a href="https://instagram.com/schals_knitted_house?igshid=13zznc3zdvoma" target="_blank" class="fa fa-instagram" style="font-size:30px;"></a> &nbsp &nbsp &nbsp
+			<a href="https://www.facebook.com/sweetlovelyshawl" target="_blank" class="fa fa-facebook" style="font-size:30px;"></a> &nbsp &nbsp &nbsp
+			<a href="http://www.wasap.my/60192213441/" target="_blank" class="fa fa-whatsapp" style="font-size:30px;"></a>
+
+		</div>
+		<div class="footer-column blank"></div>
+	</div>
+</div>
+<!-- end of footer -->
+
+<!-- sticky header script -->
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+
+
+<!--pop up message script-->
+
+        function message() {
+            alert("Your enquiry is well received. Will contact you soon!")
+            location.replace("index.html")
+        }
+<!--end of pop up message script-->
+
+</script>
+<!-- end of sticky header script -->
+
+</body>

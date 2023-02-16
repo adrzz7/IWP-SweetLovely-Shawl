@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+      <meta charset="utf-8">
+      <title> Home </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- icon stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet"><!-- font stylesheet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body {
+margin: 0;
+font-family: 'Rowdies';
+}
+
+@font-face {
+font-family: myFirstFont;
+src: url(ChinalBoldPersonalUseOnly-WRo4.ttf);
+}
+
+/* Brand Name */
+.top-container {
+text-align: center;
+background: white;
+color: black;
+font-size: 50px;
+font-weight:bold;
+font-family: myFirstFont;
+}
+/* end of Brand Name */
+
+/* Navigation Bar*/
+.header {
+height:50px;
+background: #E11584;
+color: #f1f1f1;
+width:100%;
+}
+
+.header a{
+float : left;
+display:block;
+color : white;
+text-align:center;
+font-size:15px;
+padding: 14px 16px;
+text-decoration:none;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown .dropbtn {
+font-size: 15px;
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #E11584;
+min-width: 150px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+right:0;
+}
+
+.dropdown-content a {
+float: none;
+color: white;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+/* end of Navigation Bar*/
+
+/* main body */
+.main {
+	padding: 20px;
+}
+
+p a {
+	color:#BEBEBE;
+	font-size:20px;
+	text-decoration: none;
+}
+
+.directory{
+	color:#BEBEBE
+}
+
+.category3{
+	margin-left: 50px
+}
+
+.options{
+	float: right;
+	font-family:'Rowdies';
+	font-size:20px;
+}
+
+h2{
+	color: white;
+	margin-top: 0px;
+}
+
+.prd-container1{
+	margin-left: 120px;
+}
+
+
+.prd-container1 .card {
+	width: 300px;
+	margin: 20px;
+	font-family: 'Rowdies';
+	float: left;
+
+	}
+
+.prd-container1 .card h1{
+	float: left;
+}
+
+.prd-container1 .card a{
+color: black;
+}
+
+.prd-container1 .price {
+	color: grey;
+	float: left;
+	margin-right: 200px;
+	margin-top:0
+}
+
+.prd-container1 .card button {
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	width: 200px;
+	height: 50px;
+	font-size: 18px;
+	font-family:'Rowdies'
+}
+
+.prd-container1 .card button:hover {
+	opacity: 0.7;
+}
+
+
+
+
+
+.prd-container{
+	margin-left: 120px;
+  height: 300px;
+}
+
+
+.prd-container .card {
+	width: 230px;
+	margin: 20px;
+	font-family: 'Rowdies';
+	float: left;
+
+	}
+
+.prd-container .card h1{
+	float: left;
+}
+
+
+.prd-container .card a{
+color: black;
+}
+
+.prd-container button{
+  margin-left: 20px;
+
+}
+
+
+
+
+.prd-container .price {
+	color: grey;
+	float: left;
+	margin-right: 200px;
+	margin-top:0
+}
+
+.prd-container .card button {
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	width: 200px;
+	height: 50px;
+	font-size: 18px;
+	font-family:'Rowdies'
+}
+
+.prd-container .card button:hover {
+  background-color: #E11584;
+
+}
+
+.prd-container .card a:hover {
+  color: white;
+
+}
+
+
+.product-container{
+	margin: auto;
+}
+
+.checked {
+	color: orange;
+}
+
+.pagination {
+	display: inline-block;
+	margin-left: 500px;
+	width: 100%;
+}
+
+.pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+.pagination a.active {
+	background-color: #E11584;
+	color: white;
+	border-radius: 200px;
+}
+
+.pagination a:hover:not(.active) {
+	background-color: #ddd;
+	border-radius: 100px;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  font-family: Arial Narrow;
+
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.center {
+  position: absolute;
+  top: 33%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: grey;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+/* end of main body */
+
+
+
+
+
+
+
+
+/* sticky navigation bar */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+/* end of sticky navigation bar */
+
+/* footer */
+.footer{
+	height:200px;
+	background: #E11584;
+	color: #f1f1f1;
+	bottom:0px;
+}
+
+.footer .footercontent {
+	border :1px solid red;
+	height : 200px;
+	display : flex;
+}
+
+.footer .footercontent .footer-column {
+	flex:1;
+	padding:50px;
+	font-size : 15px;
+}
+
+.footer .footercontent .footer-column a{
+	color : white;
+	text-decoration : none;
+}
+/* end of footer */
+
+</style>
+
+  </head>
+<body>
+
+<!-- Brand Name -->
+    <div class="top-container">
+    <p>SweetLovely Shawl</p>
+  </div>
+<!-- end of Brand Name -->
+
+<!-- Navigation Bar -->
+  <div class="header" id="myHeader">
+    		<a style="float:left; font-size:20px;"" class="fa fa-home" href="index.html"></a>
+  		<div class="dropdown" style="float:left;">
+  			<button class="dropbtn">All Collection
+  			  <i class="fa fa-caret-down"></i>
+  			</button>
+  			<div class="dropdown-content" style="left:0;">
+  			  <a href="product.html" >COLLECTION</a>
+          <a href="sls_shawl.html">SLS SHAWL</a>
+          <a href="sls_print.html">SLS PRINT</a>
+          <a href="sls_instant.html">SLS INSTANT</a>
+          <a href="sls_square.html">SLS SQUARE</a>
+  			</div>
+  		</div>
+		<a href="featured.html">Featured</a>
+  		<a href="aboutus.html">About Us</a>
+  		<div style="float:right" class="dropdown">
+  			<button class="dropbtn">
+  			<i class="fa fa-user"></i>
+  			</button>
+  			<div class="dropdown-content" >
+  			  <a href="profile.html">Profile</a>
+			  <a href="orderhistory.html">Order History</a>
+        <a href="loginpage.html">Logout</a>
+  			</div>
+  		</div>
+  		<a style="float:right" class="fa fa-shopping-cart" href="cart.html"></a>
+  		<a style="float:right" class="fa fa-search" href="#"></a>
+  </div>
+
+<div class="container">
+  <img src="image/homepage.png" alt="home" style="width:100%">
+</div>
+<!-- end of Navigation Bar -->
+
+<!-- Main body -->
+<h1 class="category3"> NEW ARRIVAL</h1>
+
+<div class="prd-container1">
+
+<div class="card">
+  <img src="image/pic1.jpg" alt="Adriana Curve" style="width:100%">
+  <h1>ADRIANA CURVE &nbsp  &nbsp  &nbsp  &nbsp </h1>
+  <p class="price">RM 70.00  &nbsp  &nbsp</p>
+  <p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  </p>
+  <p><button> <a href="cart.html" >ADD TO CART</a>  </button></p>
+</div>
+
+
+<div class="card">
+  <img src="image/pic10.jpg" alt="Ezzurin Yilek" style="width:100%">
+  <h1>EZZURIN YILEK &nbsp &nbsp &nbsp  &nbsp  &nbsp </h1>
+  <p class="price">RM 70.00  &nbsp  &nbsp</p>
+  <p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  </p>
+  <p><button> <a href="cart.html" >ADD TO CART</a>  </button></p>
+</div>
+
+
+
+<div class="card">
+  <img src="image/pic15.jpg" alt="Tengku Blova" style="width:100%">
+  <h1>TENGKU BLOVA &nbsp  &nbsp  &nbsp  &nbsp &nbsp  &nbsp </h1>
+  <p class="price">RM 70.00  &nbsp  &nbsp</p>
+  <p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  </p>
+  <p><button> <a href="cart.html" >ADD TO CART</a>  </button></p>
+</div>
+
+</div>
+
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#" class="active">1</a>
+  <a href="#" >2</a>
+  <a href="#">3</a>
+  <a href="#">&raquo;</a>
+</div>
+<p></p>
+
+
+<h1>&nbsp &nbsp  &nbsp SHOP BY CATEGORY </h1>
+
+<div class="prd-container">
+
+<div class="card">
+  <img src="image/pic17.jpg" style="width:100%">
+  <p><button>   <a href="sls_instant.html" target="_blank" >INSTANT</a></button></p>
+
+</div >
+
+
+<div class="card">
+  <img src="image/pic5.jpg"  style="width:100%">
+  <p><button>   <a href="sls_square.html" target="_blank" >SQUARE</a></button></p>
+</div>
+
+
+
+<div class="card">
+  <img src="image/pic11.jpg"  style="width:100%">
+  <p><button>   <a href="sls_shawl.html" target="_blank">SHAWL</a></button></p>
+</div>
+
+<div class="card">
+  <br><br><br>
+  <img src="image/pic13.jpg"  style="width:100%">
+  <br><br><br>
+  <p><button style="margin-top:14px;">   <a href="sls_print.html" target="_blank">PRINT</a></button></p>
+</div>
+
+</div>
+
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<!-- end of Main body -->
+
+<!-- footer -->
+<div class="footer">
+
+	<div class="footercontent">
+		<div class="footer-column info">
+
+			<p>INFORMATION</p>
+				<a href="feedback.html">Feedback</a><br>
+				<a href="contactus.html">Contact Us</a><br>
+				<a href="policy.html">Privacy Policy</a><br>
+				<a href="howtoorder.html">How To Order</a><br>
+
+		</div>
+		<div class="footer-column contact">
+
+			<p>CUSTOMER SERVICE</p>
+			<a href="https://instagram.com/schals_knitted_house?igshid=13zznc3zdvoma" target="_blank" class="fa fa-instagram" style="font-size:30px;"></a> &nbsp &nbsp &nbsp
+			<a href="https://www.facebook.com/sweetlovelyshawl" target="_blank" class="fa fa-facebook" style="font-size:30px;"></a> &nbsp &nbsp &nbsp
+			<a href="http://www.wasap.my/60192213441/" target="_blank" class="fa fa-whatsapp" style="font-size:30px;"></a>
+
+		</div>
+		<div class="footer-column blank"></div>
+	</div>
+</div>
+<!-- end of footer -->
+
+<!-- sticky header script -->
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+<!-- end of sticky header script -->
+
+</body>
+</html>

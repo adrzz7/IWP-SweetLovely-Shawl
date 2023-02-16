@@ -1,0 +1,142 @@
+
+<!doctype html>
+
+<head>
+
+    <link rel="stylesheet" href="sidebar_css.css">  <!--link to the style sheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!--link to the icons-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Payment</title>
+
+<style>
+
+/*main board css*/
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+    margin-left: 250px; 
+  margin-right:auto;
+  margin-top: 50px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding : 10px;
+}
+
+table, th, td {
+  border: 1px solid white;
+}
+
+#product th, #product td{
+  background-color: #dddddd;
+ 
+}
+
+#product img {
+  height :200px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <!--topbar-->
+    <div class="header" id="myHeader">
+        <p>PAYMENT</p>
+        <a style="float:right; font-size:30px; padding-top: 0px; " class="fa fa-sign-out" href="#"></a>
+    </div>
+ <!--end of topbar-->
+
+ <!--side navigation bar-->
+    <div class="sidenav">
+        <p style="color: white; padding-left: 30px; font-size: x-large;">SweetLovely <br/> &nbsp &nbsp Shawl</p>
+        <br>
+        <a href="dashboard.html">DASHBOARD</a>
+        <a href="admin_profile.html">Profile</a>
+        <button class="dropdown-btn">Product 
+            <i class="fa fa-caret-down"></i>
+        </button>
+          <div class="dropdown-container">
+            <a href="addproduct_admin.html">Add Product</a>
+            <a href="productlist_admin.html">Product List</a>
+          </div>
+        <a href="order_admin.html">Order</a>
+        <a href="customer_admin.html">Customer</a>
+        <a href="feedback_admin.html">Feedback</a>
+        <a href="payment_admin.html">Payment</a>
+      </div>
+ <!--end of side navigation bar-->
+
+ <!--main board-->
+      <div class="main">
+
+        <table id="product">
+	        
+            <tr>
+                <th> Customer ID </th>
+                <th> Order ID </th>
+                <th> Receipt </th>
+                <th> Status </th>
+                <th> Delete </th>
+            </tr>
+    
+        
+            <tr>
+                <td style="height:200px">1</td>
+                <td style="height:200px">1</td>
+                <td><img src="image/receipt.jpg" alt=""></td>
+                <td style="height:200px">Accepted</td> submit button 
+                <td style="height:20px">  <input type="submit" class="fa" value="&#xf014" style="font-size:24px"> </td>
+            </tr>
+
+    </table>
+
+      </div>
+ <!--end of main board-->
+
+ <!--sticky header script-->
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+ <!--end of sticky header script-->
+
+ <!--dropdown menu script-->
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+    }
+    </script>
+ <!--end of dropdown menu script-->
+		
+</body>
+    
+    

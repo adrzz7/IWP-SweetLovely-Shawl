@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Feedback Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icon stylesheet -->
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet"><!-- font stylesheet -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"><!-- emoji stylesheet -->
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Rowdies';
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(ChinalBoldPersonalUseOnly-WRo4.ttf);
+}
+
+/*Brand Name*/
+.top-container {
+
+	  text-align: center;
+	  background: white;
+	  color: black;
+	  font-size: 50px;
+	  font-weight:bold;
+	  font-family: myFirstFont;
+}
+/* end of Brand Name */
+
+/* Navigation Bar*/
+.header {
+  height:50px;
+  background: #E11584;
+  color: #f1f1f1;
+  width:100%;
+}
+
+.header a{
+
+		float : left;
+		display:block;
+		color : white;
+		text-align:center;
+		font-size:15px;
+		padding: 14px 16px;
+		text-decoration:none;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #E11584;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right:0;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* end of Navigation Bar*/
+
+/* main body */
+.main {
+  padding: 20px;
+}
+
+.get_in_touch{
+	max-width: 800px;
+	margin: 50px auto;
+	position: relative;
+	box-shadow:0 10px 30px 0px rgba(10,2,2,0.1);
+	padding: 30px;
+	border-radius: 50px;
+}
+
+.tittle {
+	text-align:center;
+	margin:50px;
+}
+
+.label {
+	padding:10px;
+}
+
+.input-text {
+	float:right;
+}
+
+
+.submit-btn{
+margin-left:350px;
+}
+
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+	transform: scale(1.2);
+}
+
+textarea {
+	margin-left:13px;
+}
+
+.emoji-wrapper {
+	margin-left:50px;
+	margin-top:0px;
+}
+
+.rate{
+	margin-left:25px;
+	margin-top:10px
+}
+
+.emoji img {
+	width:50px ;
+	height:50px ;
+}
+
+.submitbtn{
+  width:    150px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  margin-left: 300px;
+  font-family: 'Rowdies';
+}
+
+.submitbtn:hover {
+	cursor: pointer;
+	background-color:
+	white;color: black;
+	font-weight: bolder;
+}
+/* end of main body */
+
+/* sticky navigation bar */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* end of sticky navigation bar */
+
+/* footer */
+.footer{
+
+  height:200px;
+  background: #E11584;
+  color: #f1f1f1;
+  bottom:0px;
+
+}
+
+.footer .footercontent {
+
+	border :1px solid red;
+	height : 200px;
+	display : flex;
+
+}
+
+
+.footer .footercontent .footer-column {
+
+	flex:1;
+	padding:50px;
+	font-size : 15px;
+
+}
+
+.footer .footercontent .footer-column a{
+
+	color : white;
+	text-decoration : none;
+}
+/* end of footer */
+</style>
+</head>
+
+<body>
+
+<!-- Brand Name -->
+<div class="top-container">
+  <p>SweetLovely Shawl</p>
+</div>
+<!-- end of Brand Name -->
+
+<!-- Navigation Bar -->
+<div class="header" id="myHeader">
+  		<a style="float:left; font-size:20px;"" class="fa fa-home" href="index.html"></a>
+		<div class="dropdown" style="float:left;">
+			<button class="dropbtn">All Collection
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" style="left:0;">
+			  <a href="product.html">COLLECTION</a>
+        <a href="sls_shawl.html">SLS SHAWL</a>
+        <a href="sls_print.html">SLS PRINT</a>
+        <a href="sls_instant.html">SLS INSTANT</a>
+        <a href="sls_square.html">SLS SQUARE</a>
+			</div>
+		</div>
+		<a href="featured.html">Featured</a>
+		<a href="aboutus.html">About Us</a>
+		<div style="float:right" class="dropdown">
+			<button class="dropbtn">
+			<i class="fa fa-user"></i>
+			</button>
+			<div class="dropdown-content" >
+			  <a href="profile.html">Profile</a>
+			  <a href="orderhistory.html">Order History</a>
+        <a href="loginpage.html">Logout</a>
+			</div>
+		</div>
+		<a style="float:right" class="fa fa-shopping-cart" href="cart.html"></a>
+		<a style="float:right" class="fa fa-search" href="#"></a>
+</div>
+<!-- end of Navigation Bar -->
+
+<!-- Main body -->
+<section class="get_in_touch">
+  <h1 class="tittle">Share Us What You Feel... </h1>
+
+  <div class="container">
+    <div class="contact-form row">
+      <div class="form-field col-lg-6">
+        <label class="label" for="name"> Name</label>
+    <input type="text" class="input-text" name="" value="">
+      </div>
+      <div class="form-field col-lg-6">
+        <label class="label" for="email"> Email</label>
+        <input type="text" class="input-text" name="" value="">
+      </div>
+      <div class="form-field col-lg-6">
+        <label class="label" for="message"> Message</label>
+        <textarea name="name" rows="2" cols="28"></textarea>      </div>
+
+        <p class="rate">Rate us !</p>
+
+<div class="emoji-wrapper">
+
+      <label class="emoji">
+        <input type="radio" name="neutral" value="">
+        <img src="https://media3.giphy.com/media/QWvra259h4LCvdJnxP/giphy.gif" alt="">
+
+      </label>
+       <label class="emoji2">
+         <input type="radio" name="neutral" value="">
+         <img src="https://media1.giphy.com/media/LOnt6uqjD9OexmQJRB/giphy.gif" alt="" width="50px">
+
+       </label>
+
+    <label class="emoji">
+      <input type="radio" name="neutral" value="">
+      <img src="https://media1.giphy.com/media/h4OGa0npayrJX2NRPT/giphy.gif" alt="">
+
+    </label>
+
+</div>
+
+      <div class="form-field col-lg-6">
+          <input class="submitbtn" type="submit" name="btnsubmit" value="Submit" onclick="message()">
+      </div>
+<!--pop up message script-->
+      <script type="text/javascript">
+        function message() {
+            alert("Your feedback is well received. Thanks for your time !")
+            location.replace("index.html")
+        }
+      </script>
+<!--end of pop up message script-->
+
+    </div>
+
+  </div>
+
+</section>
+<!-- end of Main body -->
+
+<!-- footer -->
+<div class="footer">
+
+	<div class="footercontent">
+		<div class="footer-column info">
+
+			<p>INFORMATION</p>
+				<a href="feedback.html">Feedback</a><br>
+				<a href="contactus.html">Contact Us</a><br>
+				<a href="policy.html">Privacy Policy</a><br>
+				<a href="howtoorder.html">How To Order</a><br>
+
+		</div>
+		<div class="footer-column contact">
+
+			<p>CUSTOMER SERVICE</p>
+			<a href="https://instagram.com/schals_knitted_house?igshid=13zznc3zdvoma" target="_blank" class="fa fa-instagram" style="font-size:30px;"></a> &nbsp &nbsp &nbsp
+			<a href="https://www.facebook.com/sweetlovelyshawl" target="_blank" class="fa fa-facebook" style="font-size:30px;"></a> &nbsp &nbsp &nbsp
+			<a href="http://www.wasap.my/60192213441/" target="_blank" class="fa fa-whatsapp" style="font-size:30px;"></a>
+
+		</div>
+		<div class="footer-column blank"></div>
+	</div>
+</div>
+<!-- end of footer -->
+
+<!-- sticky header script -->
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+<!-- end of sticky header script -->
+</body>
+</html>

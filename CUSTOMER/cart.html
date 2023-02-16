@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cart</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icon stylesheet -->
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet"> <!-- font stylesheet -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: 'Rowdies';
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(ChinalBoldPersonalUseOnly-WRo4.ttf);
+}
+
+/* Brand Name */
+
+.top-container {
+
+	  text-align: center;
+	  background: white;
+	  color: black;
+	  font-size: 50px;
+	  font-weight:bold;
+	  font-family: myFirstFont;
+}
+
+/* end of Brand Name */
+
+/* Navigation Bar*/
+
+.header {
+  height:50px;
+  background: #E11584;
+  color: #f1f1f1;
+  width:100%;
+}
+
+.header a{
+
+		float : left;
+		display:block;
+		color : white;
+		text-align:center;
+		font-size:15px;
+		padding: 14px 16px;
+		text-decoration:none;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor:pointer;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #E11584;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right:0;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* end of Navigation Bar*/
+
+/* main body */
+
+.main {
+  padding: 20px;
+}
+
+.order {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.order img {
+
+	height: 300px;
+
+}
+
+.qty, .qty-plus, .qty-minus {
+	display: block;
+	float: left;
+}
+
+.qty {
+	font-size: 19px;
+	line-height: 50px;
+	width: 70px;
+	text-align: center;
+}
+
+.qty-plus, .qty-minus {
+	background: #fcfcfc;
+	border: none;
+	font-size: 30px;
+	font-weight: 300;
+	height: 100%;
+	padding: 0 20px;
+	-webkit-transition: background .2s linear;
+	-moz-transition: background .2s linear;
+	-ms-transition: background .2s linear;
+	-o-transition: background .2s linear;
+	transition: background .2s linear;
+}
+
+.qty-plus:hover, .qty-minus:hover {
+	background: #E11584;
+	color: #fff;
+	cursor: pointer;
+}
+
+.qty-plus {
+	line-height: 50px;
+}
+
+.qty-minus {
+	line-height: 47px;
+}
+
+.checkout {
+
+	margin-left: auto;
+	margin-right: 0;
+
+
+}
+
+.btn {
+	background: black;
+	border: 1px solid #000000;
+	cursor: pointer;
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+	padding: 16px 0;
+	width: 600px;
+	text-align: center;
+	display: table-cell;
+	text-decoration: none;
+
+	}
+
+	.btn:hover {
+	background-color:white;
+	color:black;
+}
+
+th, td {
+  padding: 15px;
+}
+
+/* end of main body */
+
+/* sticky navigation bar */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* end of sticky navigation bar */
+
+/* footer */
+
+.footer{
+
+  height:200px;
+  background: #E11584;
+  color: #f1f1f1;
+  bottom:0px;
+  position:absolut;
+
+}
+
+.footer .footercontent {
+
+	border :1px solid red;
+	height : 200px;
+	display : flex;
+
+}
+
+
+.footer .footercontent .footer-column {
+
+	flex:1;
+	padding:50px;
+	font-size : 15px;
+
+}
+
+.footer .footercontent .footer-column a{
+
+	color : white;
+	text-decoration : none;
+}
+
+/* end of footer */
+
+
+
+
+</style>
+</head>
+<body>
+
+<!-- Brand Name -->
+<div class="top-container">
+  <p>SweetLovely Shawl</p>
+</div>
+<!-- end of Brand Name -->
+
+<!-- Navigation Bar -->
+<div class="header" id="myHeader">
+  		<a style="float:left; font-size:20px;"" class="fa fa-home" href="index.html"></a>
+		<div class="dropdown" style="float:left;">
+			<button class="dropbtn">All Collection
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" style="left:0;">
+			  <a href="product.html">COLLECTION</a>
+        <a href="sls_shawl.html">SLS SHAWL</a>
+        <a href="sls_print.html">SLS PRINT</a>
+        <a href="sls_instant.html">SLS INSTANT</a>
+        <a href="sls_square.html">SLS SQUARE</a>
+  			</div>
+		</div>
+		<a href="featured.html">Featured</a>
+		<a href="aboutus.html">About Us</a>
+		<div style="float:right" class="dropdown">
+			<button class="dropbtn">
+			<i class="fa fa-user"></i>
+			</button>
+			<div class="dropdown-content" >
+			  <a href="profile.html">Profile</a>
+			  <a href="orderhistory.html">Order History</a>
+        <a href="loginpage.html">Logout</a>
+			</div>
+		</div>
+		<a style="float:right" class="fa fa-shopping-cart" href="cart.html"></a>
+		<a style="float:right" class="fa fa-search" href="#"></a>
+</div>
+<!-- end of Navigation Bar -->
+
+<!-- Main body -->
+<div class="main">
+
+<table class="order"  width="1100px"  >
+<caption><h1>CART</h1></caption>
+<hr>
+	<tr>
+	<td colspan="5"><hr></td>
+	</tr>
+	<tr>
+		<th colspan="2" >Product</th>
+		<th >Quantity</th>
+		<th >Price Per Unit</th>
+		<th >Total Price</th>
+	</tr>
+	<tr>
+		<td width="250px">
+			<img src="image/pic3.jpg" alt="">
+		</td>
+		<td>
+			<b>SHAWL PLANET 30</b><br><br>
+			Color : Hash Brown <br>
+		</td>
+		<td>
+			<span class="qty-minus">-</span>
+			<span class="qty">2</span>
+			<span class="qty-plus">+</span>
+		</td>
+		<td style="text-align:center">RM 50.00</td>
+		<td style="text-align:center">RM 100.00</td>
+		<td> <i style="font-size:24px" class="fa">&#xf014;</i>
+		</td>
+	</tr>
+	<tr>
+	<td colspan="5"><hr></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="image/pic4.jpg" alt="">
+		</td>
+		<td>
+			<b>SHAWL MOZART BEETHOVEN</b><br><br>
+			Color : Misty Green <br>
+		</td>
+		<td>
+			<span class="qty-minus">-</span>
+			<span class="qty">1</span>
+			<span class="qty-plus">+</span>
+		</td>
+		<td style="text-align:center">RM 45.00</td>
+		<td style="text-align:center">RM 45.00</td>
+		<td> <i style="font-size:24px" class="fa">&#xf014;</i></td>
+	</tr>
+	<tr>
+	<td colspan="5"><hr></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="image/pic5.jpg" alt="">
+		</td>
+		<td>
+			<b>SHAWL EUPHORIA</b><br><br>
+			Color : Dusty Lilac <br>
+		</td>
+		<td>
+			<span class="qty-minus">-</span>
+			<span class="qty">1</span>
+			<span class="qty-plus">+</span>
+		</td>
+		<td style="text-align:center">RM 66.00</td>
+		<td style="text-align:center">RM 66.00</td>
+		<td> <i style="font-size:24px" class="fa">&#xf014;</i></td>
+	</tr>
+	<tr>
+	<td colspan="5"><hr></td>
+	</tr>
+</table>
+
+<table class="checkout" border="1px solid"  width="600px">
+  <tr>
+    <th  colspan="2"><h2>CART TOTAL</h2></th>
+  </tr>
+
+  <tr>
+    <td>Product</td>
+    <td>
+	2x SHAWL PLANET<br>
+	1x SHAWL MOZART BEETHOVEN<br>
+	1x SHAWL EUPHORIA
+	</td>
+  </tr>
+
+  <tr>
+    <td>Voucher</td>
+    <td> <input type="text" name="voucher"</td>
+  </tr>
+
+  <tr>
+    <td>Shipping</td>
+    <td>
+<select name="shipping" >
+  <option value="8.00">Semenanjung Malaysia (RM 8.00)</option>
+  <option value="12.00">Sabah & Sarawak (RM 12.00)</option>
+</select>
+</td>
+  </tr>
+  <tr>
+    <td>Total</td>
+    <td>RM 211.00</td>
+  </tr>
+
+
+  <tr>
+    <td align="center" colspan="2"><a href="payment.html" class="btn">CHECKOUT</a></td>
+  </tr>
+</table>
+
+</div>
+<!-- end of Main body -->
+
+<!-- footer -->
+<div class="footer">
+
+	<div class="footercontent">
+		<div class="footer-column info">
+
+			<p>INFORMATION</p>
+				<a href="feedback.html">Feedback</a><br>
+				<a href="contactus.html">Contact Us</a><br>
+				<a href="policy.html">Privacy Policy</a><br>
+				<a href="howtoorder.html">How To Order</a><br>
+
+		</div>
+		<div class="footer-column contact">
+
+			<p>CUSTOMER SERVICE</p>
+			<a href="https://instagram.com/schals_knitted_house?igshid=13zznc3zdvoma" target="_blank" class="fa fa-instagram" style="font-size:30px;"></a> &nbsp &nbsp &nbsp
+			<a href="https://www.facebook.com/sweetlovelyshawl" target="_blank" class="fa fa-facebook" style="font-size:30px;"></a> &nbsp &nbsp &nbsp
+			<a href="http://www.wasap.my/60192213441/" target="_blank" class="fa fa-whatsapp" style="font-size:30px;"></a>
+
+		</div>
+		<div class="footer-column blank"></div>
+	</div>
+
+</div>
+<!-- end of footer -->
+
+<!-- sticky header script -->
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+</script>
+<!-- end of sticky header script -->
+
+</body>
+</html>

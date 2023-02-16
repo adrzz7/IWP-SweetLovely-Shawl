@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet"><!-- font stylesheet -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/*Brand Name*/
+.top-container {
+
+  	padding: 10px;
+    text-align: center;
+    background: #E11584;
+    color: white;
+    font-size: 60px;
+	font-family: myFirstFont;
+}
+/* end of Brand Name */
+
+/* main body */
+p a{
+
+	color:#BEBEBE;
+	font-size:20px;
+	text-decoration: none;
+
+}
+.directory{
+
+	color:#BEBEBE;
+
+}
+
+body {
+	font-family: 'Rowdies';
+	margin:0;
+}
+
+.main{
+
+
+	padding:20px;
+
+}
+@font-face {
+	font-family: myFirstFont;
+	src: url(ChinalBoldPersonalUseOnly-WRo4.ttf);
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Register{
+	margin: auto;
+	display: block;
+	margin-bottom:20%;
+}
+
+.RegisterTitle{
+	margin-top:7%;
+	text-align:center;
+	word-spacing:2px;
+	font-size:220%;
+}
+
+.RegisterFName{
+	margin: auto;
+	display: block;
+	font-size:120%;
+	padding: 14px 18px;
+}
+.RegisterLName{
+	margin: auto;
+	margin-top:-1%;
+	display: block;
+	font-size:120%;
+	padding: 14px 18px;
+}
+
+
+
+.RegisterEmail{
+	margin: auto;
+	margin-top:-1%;
+	display: block;
+	font-size:120%;
+	padding: 14px 18px;
+}
+
+.RegisterPwd{
+	margin: auto;
+	margin-top:-1%;
+	display: block;
+	font-size:120%;
+	padding: 14px 18px;
+}
+
+.RegisterBtn{
+	cursor:pointer;
+	margin: auto;
+	display: block;
+	background-color: black;
+	border: 1px;
+	color: white;
+	padding: 1.5% 14%;
+	text-align: center;
+	font-size: 150%;
+}
+.RegisterBtn:hover{
+	background-color: white;
+	border: 1px solid black;
+	color: black;
+}
+/* end of main body */
+
+</style>
+</head>
+<body>
+
+<!-- Brand Name -->
+<div class="top-container">
+	  <p>SweetLovely Shawl</p>
+	</div>
+<!-- end of Brand Name -->
+
+<!-- Main body -->
+<div class="main">
+	<div class="Register">
+		<p>
+		<h1 class="RegisterTitle">REGISTER</h1>
+		</p>
+		<form action="loginpage.html" method="get">
+			<div class="RegisterFName">
+				<p>
+				<input type="text" size="35" maxlength="40" placeholder="Your first name" class="RegisterFName"/>
+				</p>
+			</div>
+			<div class="RegisterLName">
+				<p>
+				<input type="text" size="35" maxlength="40" placeholder="Your last name" class="RegisterLName"/>
+				</p>
+			</div>
+			<div class="RegisterEmail">
+				<p>
+				<input type="text" size="35" maxlength="50" placeholder="Your email address" class="RegisterEmail"/>
+				</p>
+			</div>
+
+			<div class="RegisterPwd">
+				<p>
+				<input type="password" size="35" maxlength="20" placeholder="Password" class="RegisterPwd" />
+			</div>
+			<p><input class="RegisterBtn" type="submit" value="REGISTER" onclick="message()"></p>
+		</form>
+	</div>
+</div>
+<!-- end of Main body -->
+
+<!-- pop up message when register button is clicked -->
+<script type="text/javascript">
+  function message() {
+      alert("Your account is succesfully created !")
+      location.replace("loginpage.html")
+  }
+</script>
+<!-- end of pop up message when register button is clicked -->
+
+
+</body>
+</html>

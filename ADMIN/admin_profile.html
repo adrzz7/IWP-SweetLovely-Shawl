@@ -1,0 +1,151 @@
+<!doctype html>
+
+<head>
+
+    <link rel="stylesheet" href="sidebar_css.css">  <!--link to the style sheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!--link to the icons-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Profile</title>
+
+<style>
+
+/*main board css*/
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+}
+
+input[type=submit]:hover {
+    background-color: grey;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/*end of main board css*/
+
+</style>
+
+</head>
+
+<body>
+
+  <!--topbar-->
+    <div class="header" id="myHeader">
+        <p>PROFILE</p>
+        <a  class="fa fa-sign-out" href="#"></a>
+    </div>
+ <!--end of topbar-->
+
+ <!--side navigation bar-->
+    <div class="sidenav">
+        <p style="color: white; padding-left: 30px; font-size: x-large;">SweetLovely <br/> &nbsp &nbsp Shawl</p>
+        <br>
+        <a href="dashboard.html">DASHBOARD</a>
+        <a href="admin_profile.html">Profile</a>
+        <button class="dropdown-btn">Product 
+            <i class="fa fa-caret-down"></i>
+        </button>
+          <div class="dropdown-container">
+            <a href="addproduct_admin.html">Add Product</a>
+            <a href="productlist_admin.html">Product List</a>
+          </div>
+        <a href="order_admin.html">Order</a>
+        <a href="customer_admin.html">Customer</a>
+        <a href="feedback_admin.html">Feedback</a>
+        <a href="payment_admin.html">Payment</a>
+      </div>
+ <!--end of side navigation bar-->
+
+ <!--main board-->
+     
+        <div class="container" style="max-width:500px;margin-left:500px; margin-top:80px;">
+            <form action="/action_page.php">
+              <label for="pfirst">First Name</label>
+              <input type="text" id="pfirst" name="firstname">
+              
+              <label for="plast">Last Name</label>
+              <input type="text" id="plast" name="lastname">
+          
+              
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email">
+              
+              <label for="password">Password</label>
+              <input type="text" id="password" name="password">
+              
+              <label for="repassword">Reconfirm Password</label>
+              <input type="text" id="repassword" name="repassword">
+              
+             <br>
+              <input type="submit" value="RESET">
+              <input type="submit" value="UPDATE">
+              
+            </form>
+          </div>
+          
+     
+ <!--end of main board-->
+
+ <!--sticky header script-->
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+ <!--end of sticky header script-->
+
+ <!--dropdown menu script-->
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+    }
+    </script>
+ <!--end of dropdown menu script-->
+
+</body>
+    </html>

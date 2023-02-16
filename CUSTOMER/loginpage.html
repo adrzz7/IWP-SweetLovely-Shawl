@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet"><!-- font stylesheet -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/*Brand Name*/
+.top-container {
+
+  	padding: 10px;
+    text-align: center;
+    background: #E11584;
+    color: white;
+    font-size: 60px;
+	font-family: myFirstFont;
+}
+/* end of Brand Name */
+
+/* main body */
+p a{
+
+	color:#BEBEBE;
+	font-size:20px;
+	text-decoration: none;
+
+}
+.directory{
+
+	color:#BEBEBE;
+
+}
+
+body {
+	font-family: 'Rowdies';
+	margin:0;
+}
+
+.main{
+
+
+	padding:20px;
+
+}
+@font-face {
+	font-family: myFirstFont;
+	src: url(ChinalBoldPersonalUseOnly-WRo4.ttf);
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Login{
+	margin: auto;
+	display: block;
+	margin-bottom:20%;
+}
+
+.LoginTitle{
+	margin-top:7%;
+	text-align:center;
+	word-spacing:2px;
+	font-size:220%;
+}
+
+.LoginEmail{
+	margin: auto;
+	display: block;
+	font-size:120%;
+	padding: 14px 18px;
+}
+
+.LoginPwd{
+	margin: auto;
+	margin-top:-1%;
+	display: block;
+	font-size:120%;
+	padding: 14px 18px;
+}
+
+#FrgtPwd{
+	letter-spacing:1px;
+	margin-left:31%;
+	text-align:left;
+	font-size:110%;
+	margin-top:1%;
+}
+
+#FrgtPwd:hover{
+	color: grey;
+	cursor:pointer;
+}
+
+.SignInBtn{
+	cursor:pointer;
+	margin: auto;
+	display: block;
+	background-color: black;
+	border: 1px;
+	color: white;
+	padding: 1.5% 15%;
+	text-align: center;
+	font-size: 150%;
+}
+.SignInBtn:hover{
+	background-color: white;
+	border: 1px solid black;
+	color: black;
+}
+
+
+.CrtAccBtn{
+	margin: auto;
+	display: block;
+	background-color: Transparent;
+	padding: 0% 14.5%;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	font-size: 140%;
+}
+ .CrtAccBtn :hover{
+	color: grey;
+}
+/* end of main body */
+
+</style>
+</head>
+<body>
+
+<!-- Brand Name -->
+<div class="top-container">
+	  <p>SweetLovely Shawl</p>
+	</div>
+<!-- end of Brand Name -->
+
+<!-- Main body -->
+<div class="main">
+	<div class="Login">
+		<p>
+		<h1 class="LoginTitle">LOGIN</h1>
+		</p>
+		<form action="registration.html">
+
+			<div class="LoginEmail">
+				<p>
+				<input type="email" size="35" maxlength="50" placeholder="Your email address" class="LoginEmail"/>
+				</p>
+			</div>
+			<div class="LoginPwd">
+				<p>
+				<input type="password" size="35" maxlength="20" placeholder="Password" class="LoginPwd" />
+				<p id="FrgtPwd">Forgot password?</p>
+				</p>
+			</div>
+			<p><input class="SignInBtn" type="button" value="SIGN IN" onclick="sucess()"></p>
+			<p><input class="CrtAccBtn" type="submit" value="Create Account"></p>
+     <p><input class="CrtAccBtn" type="button" value="Admin Login" onclick="redirect()"></p>
+		</form>
+
+
+	</div>
+</div>
+<!-- end of Main body -->
+
+
+<!-- to direct user to homepage/index page -->
+<script type="text/javascript">
+
+function sucess(){
+
+    location.replace("index.html");
+}
+</script>
+
+<!-- end of javascript-->
+
+
+<!-- to direct admin to admin dashboard -->
+<script type="text/javascript">
+
+function redirect(){
+
+    location.replace("addmin_loginpage.html");
+}
+</script>
+
+<!-- end of javascript-->
+
+</body>
+</html>

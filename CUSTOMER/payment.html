@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- icon stylesheet -->
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet"><!-- font stylesheet -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/* Brand Name */
+.top-container {
+
+  	padding: 10px;
+    text-align: center;
+    background: #E11584;
+    color: white;
+    font-size: 60px;
+	font-family: myFirstFont;
+}
+/* end of Brand Name */
+
+/* main body */
+p a{
+
+	color:#BEBEBE;
+	font-size:20px;
+	text-decoration: none;
+
+}
+.directory{
+
+	color:#BEBEBE;
+
+}
+
+body {
+	font-family: 'Rowdies';
+	margin:0;
+}
+
+.main{
+
+
+	padding:20px;
+
+}
+@font-face {
+	font-family: myFirstFont;
+	src: url(ChinalBoldPersonalUseOnly-WRo4.ttf);
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.billing {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width:500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type=text], select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn {
+	background: black;
+	border: 1px solid #000000;
+	cursor: pointer;
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+	padding: 16px 0;
+	text-align: center;
+	display: table-cell;
+	width:200px;
+
+	}
+
+	.btn:hover {
+	background-color:white;
+	color:black;
+}
+/* end of main body */
+
+</style>
+</head>
+<body>
+
+<!-- Brand Name -->
+<div class="top-container">
+	<p>SweetLovely Shawl</p>
+</div>
+<!-- end of Brand Name -->
+
+<!-- Main body -->
+<div class="main">
+
+	<p>
+	<h1>PAYMENT</h1>
+	</p>
+
+    <p  class="directory">
+      <a href="cart.html">Cart</a> /
+      <a href="payment.html">Payment</a>
+
+    </p>
+
+<div class="billing">
+  <form action="/action_page.php">
+	<p>
+	<h2>Billing Address</h2>
+	</p>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."> &nbsp &nbsp &nbsp
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."> <br>
+	<input type="text" id="email" name="email" size="50px" placeholder="Email.."><br>
+	<input type="text" id="contact" name="contact" size="50px" placeholder="Phone number.."><br>
+	<input type="text" id="address" name="address" size="60px" placeholder="Your address.."><br>
+	<input type="text" id="city" name="city"  placeholder="City..">
+	<input type="text" id="state" name="state" placeholder="State.."><br>
+	<input type="text" id="postalcode" name="postalcode" placeholder="Postal code..">
+	<input type="text" id="country" name="country" placeholder="Country.."><br><br>
+	<p>
+	<h2>Payment</h2>
+	</p>
+	<a href="https://www.maybank2u.com.my/mbb/m2u/common/M2ULogin.do?action=Login"><img src="image/maybanklogo.png" alt="Maybank" style="width:150px;"></a> &nbsp &nbsp &nbsp
+	<a href="https://www.cimbclicks.com.my/"><img src="image/cimbbanklogo.jpg" alt="Cimb Bank" style="width:150px;"></a>
+	<p>Receipient Name : Sweet Lovely Shawl</p>
+	<p>Bank : Cimb</p>
+	<p>Account Number : 529639521986359894</p><br>
+	<label for="img">Attach Payment Receipt:</label>
+    <input type="file" id="img" name="img" accept="image/*">
+	<br><br>
+    <input class="btn" type="button" value="COMPLETE" onclick="message()">
+  </form>
+
+  <!-- pop up message when COMPLETE button is clicked -->
+  <script type="text/javascript">
+    function message() {
+        alert("Your payment is received ! We will email you the updates soon!")
+        location.replace("index.html")
+    }
+  </script>
+
+  <!-- end pop up message -->
+
+
+</div>
+<!-- end of Main body -->
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+
+<!doctype html>
+
+<head>
+
+    <link rel="stylesheet" href="sidebar_css.css">  <!--link to the style sheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!--link to the icons-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Product List</title>
+
+    
+    
+<style>
+
+/*main board css*/
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+    margin-left: 300px; 
+  margin-right:auto;
+  margin-top: 100px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding : 10px;
+}
+
+table, th, td {
+  border: 1px solid white;
+}
+
+#product th, #product td{
+  background-color: #dddddd;
+ 
+}
+
+#product img {
+  height :200px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <!--topbar-->
+    <div class="header" id="myHeader">
+         <p>PRODUCT LIST</p>
+        <a style="float:right; font-size:30px; padding-top: 0px; " class="fa fa-sign-out" href="#"></a>
+    </div>
+ <!--end of topbar-->
+
+ <!--side navigation bar-->
+    <div class="sidenav">
+        <p style="color: white; padding-left: 30px; font-size: x-large;">SweetLovely <br/> &nbsp &nbsp Shawl</p>
+        <br>
+        <a href="dashboard.html">DASHBOARD</a>
+        <a href="admin_profile.html">Profile</a>
+        <button class="dropdown-btn">Product 
+            <i class="fa fa-caret-down"></i>
+        </button>
+          <div class="dropdown-container">
+            <a href="addproduct_admin.html">Add Product</a>
+            <a href="productlist_admin.html">Product List</a>
+          </div>
+        <a href="order_admin.html">Order</a>
+        <a href="customer_admin.html">Customer</a>
+        <a href="feedback_admin.html">Feedback</a>
+        <a href="payment_admin.html">Payment</a>
+      </div>
+ <!--end of side navigation bar-->
+
+ <!--main board-->
+      <div class="main">
+<table id="product">
+	        
+			    <tr>
+				    <th> Product Number </th>
+          <th> Name </th>
+          <th> Picture </th>
+					<th> Price </th>
+					<th> Color </th>
+					<th> Category </th>
+					<th> Stock </th>
+					<th> Stock Status </th>
+					<th> Edit </th>
+			    </tr>
+		
+		    
+			    <tr>
+				    <td style="height:250px">23</td>
+          <td style="height:250px">BLABLABLA</td>
+          <td><img src="image/pic4.jpg" alt=""></td>
+					<td style="height:250px">RM 67.00</td>
+					<td style="height:250px">DUSTY PEOPLE</td>
+					<td style="height:250px">SHAWL</td>
+					<td style="height:250px">20</td>
+					<td style="height:250px">IN-STOCK</td>
+					<td style="height:250px"> <i style="font-size:24px" class="fa">&#xf040;</i> <i style="font-size:24px" class="fa">&#xf014;</i> </td>
+				</tr>
+
+		</table>
+      </div>
+ <!--end of main board-->
+
+ <!--sticky header script-->
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+ <!--end of sticky header script-->
+
+ <!--dropdown menu script-->
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+    }
+    </script>
+ <!--end of dropdown menu script-->
+
+</body>
+    
